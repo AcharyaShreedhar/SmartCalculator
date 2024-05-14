@@ -1,0 +1,192 @@
+<!-- 
+    Author:Pinalben Tulasibhai Balar
+    Date:2023/04/15
+    Group: 7
+    Application:Smart Calculator
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./calendar/jquery-ui.min.css">
+    <script src="./calendar/jquery-3.6.4.min.js"></script>
+    <script src="./calendar/jquery-ui.min.js"></script>
+    <script src="smartcalculator.js"></script>
+    <title>Smart Calculator</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><div class="logo">
+                <img
+                  src="./images/smartcalculator.svg"
+                  alt="Smart Calculator logo"
+                /></div
+            ></a>
+          </li>
+          <li>
+            <a href="#">Financial</a>
+            <ul>
+              <li><a href="salestax.html">Sales Tax</a></li>
+              <li><a href="simpleinterest.html">Simple Interest</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Fitness and Health</a>
+            <ul>
+              <li><a href="bmi.html">BMI</a></li>
+              <li><a href="weight.html">Weight</a></li>
+            </ul>
+          </li>
+          <li><a href="unitconversion.html">Unit</a></li>
+          <li><a href="age.html">Age</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="wrapper">
+        <section class="center">
+          <div class="container">
+            <h1>Age Calculator</h1>
+            <form>
+              <div class="form-group">
+                <label for="date of birth">Date of Birth:</label>
+                <input
+                  type="text"
+                  id="dob"
+                  placeholder="yyyy-mm-dd"
+                  required
+                />
+              </div>
+
+              <button id="calculate-age" type="button">Calculate</button>
+            </form>
+            <div id="age" class="result"></div>
+            <div>
+              <p>
+                The age of a person can be counted differently in different
+                cultures. This calculator is based on the most common age
+                system. In this system, age increases on a person's birthday.
+                For example, the age of a person who has lived for 3 years and
+                11 months is 3, and their age will increase to 4 on their next
+                birthday one month later. Most western countries use this age
+                system. In some cultures, age is expressed by counting years
+                with or without including the current year. For example, a
+                person who is twenty years old is the same age as another person
+                who is in their twenty-first year of life. In one of the
+                traditional Chinese age systems, people are born at age 1 and
+                their age increases up at the Traditional Chinese New Year
+                rather than their birthday. For example, if one baby is born
+                just one day before the Traditional Chinese New Year, 2 days
+                later, the baby will be 2 even though he/she is only 2 days old.
+                In some situations, the months and day result of this age
+                calculator may be confusing, especially when the starting date
+                is the end of a month. For example, we count Feb. 20 to Mar. 20
+                to be one month. However, there are two ways to calculate the
+                age from Feb. 28, 2022 to Mar. 31, 2022. If we consider Feb. 28
+                to Mar. 28 to be one month, then the result is one month and 3
+                days. If we consider both Feb. 28 and Mar. 31 as the end of the
+                month, then the result is one month. Both calculation results
+                are reasonable. Similar situations exist for dates like Apr. 30
+                to May 31, May 30 to June 30, etc. The confusion comes from the
+                uneven number of days in different months. In our calculations,
+                we use the former method.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="calculatorTypes">
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/financial-calculator.jpg"
+              alt="Image containing some coins"
+            />
+            <h2>Financial Calculator</h2>
+            <ul>
+              <li><a href="simpleinterest.html">Interest Calculator</a></li>
+              <li><a href="salestax.html">Sales Tax Calculator</a></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/fitness-calculator.jpg"
+              alt="Image containg some fitness equipments"
+            />
+            <h2>Fitness Calculator</h2>
+            <ul>
+              <li><a href="bmi.html">BMI Calculator</a></li>
+              <li><a href="weight.html">Weight Calculator</a></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/length.jpg"
+              alt="Image containg some fitness equipments"
+            />
+            <h2>Unit Conversion</h2>
+            <ul>
+              <li><a href="unitconversion.html">Length Conversion</a></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/age.jpeg"
+              alt="Image showing age calculator logo"
+            />
+            <h2>Other Calculator</h2>
+            <ul>
+              <li><a href="age.html">Age Calculator</a></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="purpose">
+        <p>
+          SmartCalculator's sole focus is to provide fast, comprehensive, and
+          convenient online calculators in various areas, including finance,
+          fitness, health, math, and more. Our goal is to make calculations easy
+          and accessible for everyone. All of our tools and services are
+          completely free, with no registration required. We have coded and
+          developed each calculator individually and put them through strict,
+          comprehensive testing. However, if you notice even the slightest
+          error, please inform us – your feedback is highly appreciated. While
+          most calculators on SmartCalculator are designed to be universally
+          applicable, some may be specific to certain countries or regions.
+        </p>
+      </div>
+      <div class="copyright">
+        <caption>
+          © 2023 SmartCalculator. All Rights Reserved.
+        </caption>
+      </div>
+    </footer>
+  </body>
+</html>

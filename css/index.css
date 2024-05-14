@@ -1,0 +1,441 @@
+/*
+    Author:Shree Dhar Acharya
+    Date:2023/04/15
+    Student ID:8899288
+    Group:7
+    Application:Smart Calculator
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9EC7A6;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    padding: 10px;
+}
+
+header img {
+    color: #C9C9ED;
+}
+
+.logo {
+    margin: 14px;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+}
+
+.backgroundOverview {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-column: 1/-1;
+    column-gap: 20px;
+    border-bottom: 1px solid black;
+    color: #0A0A0A;
+}
+
+.contactus {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    column-gap: 20px;
+    border-bottom: 1px solid black;
+    color: #0A0A0A;
+}
+
+.imagewrapper {
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+}
+
+.map-container {
+    grid-row: 2/2;
+    grid-column: 1/2;
+}
+
+.contactcontent {
+    grid-row: 2/2;
+    grid-column: 2/2;
+}
+
+.imagewrapper img {
+    width: 300px;
+    height: 400px;
+}
+
+.content h1 {
+    text-align: left;
+}
+
+.content {
+    grid-row: 2/3;
+    grid-column: 2/-1;
+}
+
+.calculatorTypes {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 4/-1;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    grid-column: 1/-1;
+    background-color: #471F44;
+    color: #FFFFFF;
+}
+
+.purpose {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.calculatorTypes img {
+    margin-left: 22px;
+}
+
+.copyright {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.copyright li {
+    display: inline;
+    margin: 5px;
+    font-size: x-large;
+
+}
+
+caption {
+    margin-left: 30px;
+    margin: 5px;
+    font-size: x-large;
+}
+
+.copyright li a {
+    color: white;
+}
+
+.calculatorTypes li a:hover {
+    color: black;
+    border: 1px solid black;
+}
+
+.calculatorTypes li {
+    font-size: large;
+}
+
+.center {
+    font-size: 100%;
+    width: 550px;
+    margin: 0 auto;
+    /* border: 3px solid lightyellow; */
+    border-radius: 10px;
+    padding: 15px 25px;
+    background-color: white;
+}
+
+.wrapper {
+    padding: 30px;
+    border-bottom: 1px solid black;
+    color: #0A0A0A;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #000;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 70%;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #000;
+    cursor: pointer;
+}
+
+.output {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.output p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styles for the main navigation bar */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* background-color: #333; */
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 1rem;
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li:hover>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    min-width: 10rem;
+    border-radius: 10px;
+}
+
+nav ul ul li {
+    position: relative;
+    border-bottom: 1px solid #777;
+    margin: 0;
+}
+
+nav ul ul li a {
+    padding: 0.5rem 1rem;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul ul li a:hover {
+    background-color: #444;
+}
+
+
+.avatar {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%
+}
+
+.slider {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.slider img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #4CAF50;
+}
+
+.slick-prev:before {
+    color: green
+}
+
+.reasons {
+    padding: 0px;
+}
+
+.reasons li {
+    list-style-type: decimal;
+}
+
+.map-container {
+    height: 400px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+
+}
+
+.contactcontent {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.contactus label {
+    display: inline-block;
+    width: 100px;
+    font-weight: 600;
+}
+
+.contactus input {
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contactus textarea {
+    width: 310px;
+}
+
+.contactus button {
+    padding: 10px 20px;
+    width: 200px;
+    margin-left: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #000;
+    cursor: pointer;
+}
+
+.message {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* hover animation on calculator types avatar */
+.avatar {
+    transition: transform 0.5s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.5);
+}

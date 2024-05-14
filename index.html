@@ -1,0 +1,199 @@
+<!-- 
+    Author:Shree Dhar Acharya
+    Date:2023/04/15
+    Student ID:8899288
+    Group: 7
+    Application:Smart Calculator
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to the Slick Slider CSS file -->
+    <link rel="stylesheet" type="text/css" href="./slickslider/slick.css" />
+
+    <!-- Link to the Slick Slider theme CSS file (optional) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slickslider/slick-theme.css"
+    />
+
+    <!-- Link to the Slick Slider JavaScript file -->
+    <script type="text/javascript" src="./slickslider/slick.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <script src="smartcalculator.js"></script>
+    <title>Smart Calculator</title>
+  </head>
+  <body class="home">
+    <!-- header common component -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><div class="logo">
+                <img
+                  src="./images/smartcalculator.svg"
+                  alt="Smart Calculator logo"
+                /></div
+            ></a>
+          </li>
+          <li>
+            <a href="#">Financial</a>
+            <ul>
+              <li><a href="salestax.html">Sales Tax</a></li>
+              <li><a href="simpleinterest.html">Simple Interest</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Fitness and Health</a>
+            <ul>
+              <li><a href="bmi.html">BMI</a></li>
+              <li><a href="weight.html">Weight</a></li>
+            </ul>
+          </li>
+          <li><a href="unitconversion.html">Unit</a></li>
+          <li><a href="age.html">Age</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Slick Slider -->
+      <div class="slider">
+        <div><img src="./images/smartcalculator1.jpg" /></div>
+        <div><img src="./images/smartcalculator2.jpg" /></div>
+        <div><img src="./images/smartcalculator3.jpg" /></div>
+        <div><img src="./images/smartcalculator4.jpg" /></div>
+      </div>
+      <section class="backgroundOverview">
+        <div class="imagewrapper">
+          <img
+            src="./images/calculator.jpg"
+            alt="An image showing calculator glass and learning materials"
+          />
+        </div>
+        <div class="content">
+          <h1>The evolution of the calculator</h1>
+          <p>
+            Most calculators these days require electricity to operate or are
+            battery-powered calculators. Calculators work by performing
+            programmed functions based on numerical inputs. Before the
+            electronic calculator (circa 1970), a more primitive calculator, the
+            slide rule, was commonly used. It consisted of a slat of wood called
+            the slide that could be moved in and out of a reinforced pair of
+            slats. Both the slide and the outer pair of slats had calibrated
+            numerical scales.
+          </p>
+
+          <h1>Modern calculators</h1>
+          <p>
+            As calculators became more advanced during the 1970s, they were able
+            to make problem-solving computations involving variables (unknowns).
+            These were the first personal computers. Additionally, calculators
+            have digital versions that can be downloaded or come with most
+            smartphone and personal computer operating systems. Today's personal
+            computers can still perform such operations, and most are provided
+            with a virtual calculator program that looks, on screen, like a
+            hand-held calculator. The buttons are actuated by pointing and
+            clicking. Theoretically, a modern computer is a calculator that
+            works with binary numbers and has a much larger memory. But in the
+            practical sense, a computer is far more than a mere calculator
+            because of the wide variety of noncomputational tasks it can
+            perform.
+          </p>
+        </div>
+      </section>
+      <!-- Calculator types with animation on hovering avatar with Navigation -->
+      <section class="calculatorTypes">
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/financial-calculator.jpg"
+              alt="Image containing some coins"
+            />
+            <h2>Financial Calculator</h2>
+            <ul>
+              <li><a href="simpleinterest.html">Interest Calculator</a></li>
+              <li><a href="salestax.html">Sales Tax Calculator</a></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/fitness-calculator.jpg"
+              alt="Image containg some fitness equipments"
+            />
+            <h2>Fitness Calculator</h2>
+            <ul>
+              <li><a href="bmi.html">BMI Calculator</a></li>
+              <li><a href="weight.html">Weight Calculator</a></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/length.jpg"
+              alt="Image containg some fitness equipments"
+            />
+            <h2>Unit Conversion</h2>
+            <ul>
+              <li><a href="unitconversion.html">Length Conversion</a></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/age.jpeg"
+              alt="Image showing age calculator logo"
+            />
+            <h2>Other Calculator</h2>
+            <ul>
+              <li><a href="age.html">Age Calculator</a></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="purpose">
+        <p>
+          SmartCalculator's sole focus is to provide fast, comprehensive, and
+          convenient online calculators in various areas, including finance,
+          fitness, health, math, and more. Our goal is to make calculations easy
+          and accessible for everyone. All of our tools and services are
+          completely free, with no registration required. We have coded and
+          developed each calculator individually and put them through strict,
+          comprehensive testing. However, if you notice even the slightest
+          error, please inform us – your feedback is highly appreciated. While
+          most calculators on SmartCalculator are designed to be universally
+          applicable, some may be specific to certain countries or regions.
+        </p>
+      </div>
+      <div class="copyright">
+        <caption>
+          © 2023 SmartCalculator. All Rights Reserved.
+        </caption>
+      </div>
+    </footer>
+  </body>
+</html>

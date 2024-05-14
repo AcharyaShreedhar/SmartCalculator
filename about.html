@@ -1,0 +1,211 @@
+<!-- 
+    Author:Meet Bhuva
+    Date:2023/04/15
+    Group: 7
+    Application:Smart Calculator
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to the Slick Slider CSS file -->
+    <link rel="stylesheet" type="text/css" href="./slickslider/slick.css" />
+
+    <!-- Link to the Slick Slider theme CSS file (optional) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slickslider/slick-theme.css"
+    />
+
+    <!-- Link to the Slick Slider JavaScript file -->
+    <script type="text/javascript" src="./slickslider/slick.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <script src="smartcalculator.js"></script>
+    <title>Smart Calculator</title>
+  </head>
+  <body class="home">
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><div class="logo">
+                <img
+                  src="./images/smartcalculator.svg"
+                  alt="Smart Calculator logo"
+                /></div
+            ></a>
+          </li>
+          <li>
+            <a href="#">Financial</a>
+            <ul>
+              <li><a href="salestax.html">Sales Tax</a></li>
+              <li><a href="simpleinterest.html">Simple Interest</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Fitness and Health</a>
+            <ul>
+              <li><a href="bmi.html">BMI</a></li>
+              <li><a href="weight.html">Weight</a></li>
+            </ul>
+          </li>
+          <li><a href="unitconversion.html">Unit</a></li>
+          <li><a href="age.html">Age</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="slider">
+        <div><img src="./images/smartcalculator5.jpg" /></div>
+        <div><img src="./images/smartcalculator6.jpg" /></div>
+        <div><img src="./images/smartcalculator7.jpg" /></div>
+        <div><img src="./images/smartcalculator8.jpg" /></div>
+      </div>
+
+      <section class="backgroundOverview">
+        <h2>About Us</h2>
+        <p>
+          Welcome to Smart Calculator, your go-to source for powerful and
+          intuitive online calculators. Our mission is to provide users with
+          accurate and easy-to-use calculators that can help simplify complex
+          calculations and improve decision-making.
+        </p>
+
+        <h2>Our Story</h2>
+        <p>
+          Smart Calculator was founded in 2020 by a team of tech-savvy
+          professionals with a passion for creating innovative and user-friendly
+          tools. Our team consists of experienced developers, designers, and
+          mathematicians who are dedicated to providing top-notch calculators
+          for various fields, including finance, science, health, and more.
+        </p>
+
+        <h2>Why Choose Smart Calculator</h2>
+        <ol class="reasons">
+          <li>
+            <strong>Accuracy:</strong> Our calculators are meticulously designed
+            and rigorously tested to ensure precise results, helping users make
+            informed decisions based on accurate calculations.
+          </li>
+          <li>
+            <strong>User-friendly Interface:</strong> We believe in simplicity
+            and ease of use. Our calculators feature intuitive interfaces with
+            clear instructions, making them accessible to users of all levels of
+            expertise.
+          </li>
+          <li>
+            <strong>Wide Range of Calculators:</strong> We offer a diverse
+            collection of calculators to cater to different needs, including
+            mortgage calculators, body mass index (BMI) calculators, currency
+            converters, and more.
+          </li>
+          <li>
+            <strong>Mobile-friendly:</strong> Our calculators are designed to be
+            responsive, making them accessible on various devices, including
+            desktops, tablets, and smartphones.
+          </li>
+          <li>
+            <strong>Privacy and Security:</strong> We value your privacy and
+            take security seriously. We do not store any personal information
+            and ensure that all data entered into our calculators is processed
+            securely.
+          </li>
+          <li>
+            <strong>Free and Ad-free:</strong> Our calculators are completely
+            free to use, and we do not display any advertisements on our
+            website, ensuring a seamless user experience.
+          </li>
+        </ol>
+      </section>
+      <section class="calculatorTypes">
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/financial-calculator.jpg"
+              alt="Image containing some coins"
+            />
+            <h2>Financial Calculator</h2>
+            <ul>
+              <li><a href="simpleinterest.html">Interest Calculator</a></li>
+              <li><a href="salestax.html">Sales Tax Calculator</a></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/fitness-calculator.jpg"
+              alt="Image containg some fitness equipments"
+            />
+            <h2>Fitness Calculator</h2>
+            <ul>
+              <li><a href="bmi.html">BMI Calculator</a></li>
+              <li><a href="weight.html">Weight Calculator</a></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/length.jpg"
+              alt="Image containg some fitness equipments"
+            />
+            <h2>Unit Conversion</h2>
+            <ul>
+              <li><a href="unitconversion.html">Length Conversion</a></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img
+              class="avatar"
+              src="./images/age.jpeg"
+              alt="Image showing age calculator logo"
+            />
+            <h2>Other Calculator</h2>
+            <ul>
+              <li><a href="age.html">Age Calculator</a></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="purpose">
+        <p>
+          SmartCalculator's sole focus is to provide fast, comprehensive, and
+          convenient online calculators in various areas, including finance,
+          fitness, health, math, and more. Our goal is to make calculations easy
+          and accessible for everyone. All of our tools and services are
+          completely free, with no registration required. We have coded and
+          developed each calculator individually and put them through strict,
+          comprehensive testing. However, if you notice even the slightest
+          error, please inform us – your feedback is highly appreciated. While
+          most calculators on SmartCalculator are designed to be universally
+          applicable, some may be specific to certain countries or regions.
+        </p>
+      </div>
+      <div class="copyright">
+        <caption>
+          © 2023 SmartCalculator. All Rights Reserved.
+        </caption>
+      </div>
+    </footer>
+  </body>
+</html>
